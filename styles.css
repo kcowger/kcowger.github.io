@@ -83,6 +83,27 @@ a:hover { text-decoration-thickness: 2px; text-decoration-color: var(--ink); }
   text-wrap: pretty;
 }
 
+/* ---------- Inner pages (writing) ---------- */
+.crumb {
+  font-size: 0.9em;
+  color: var(--ink-faint);
+  margin-bottom: 1.1rem;
+}
+.crumb a { color: inherit; }
+.crumb a:hover { color: var(--ink); }
+
+.hero .hero__title--inner {
+  font-size: clamp(1.7rem, 1.5rem + 1vw, 2.4rem);
+}
+
+.poem {
+  white-space: pre-line;
+  line-height: 1.75;
+  font-size: clamp(1.02rem, 0.98rem + 0.25vw, 1.16rem);
+  max-width: 58ch;
+  text-wrap: pretty;
+}
+
 /* ---------- Project list ---------- */
 .projects { border-top: 1px solid var(--line); }
 
